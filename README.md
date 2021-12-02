@@ -16,7 +16,7 @@ This scheduler tracks your work day from 0900 hrs to 1700 hrs (9am to 5pm). You 
 [Work Day Scheduler](https://wparker05.github.io/work-day-scheduler/)
 
 ## Visuals
-![my image](./assets/images/work-day/scheduler-pic.png)
+![Picture of work day scheduler page](./assets/images/work-day-scheduler-pic.png)
 
 
 
