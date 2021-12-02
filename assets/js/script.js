@@ -34,83 +34,17 @@ for (var i = 0; i < 9; i++) {
     // console.log(i);
     counter++;
    
-       console.log($('#btn0'));
-    var btn = function(count, texts){
+     
+    var btn = function(count, texts, textCount){
         
         $(`${count}`).on('click', function(){
             var text=$(`${texts}`)
             var saveText = text[0].value;
-            localStorage.setItem(`${texts}`, JSON.stringify(saveText));
+            localStorage.setItem(`${textCount}`, JSON.stringify(saveText));
          })
     }
     
-    btn(`#btn${i}`,`#text${i}` );
+    btn(`#btn${i}`,`#text${i}`,`text${i}` );
 
 }
        
-    // var btn0 = $('#btn0');
-    // btn0.on('click', function(){
-    //    var text=$('#text0')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text0', JSON.stringify(saveText));
-    // })
-
-    // var btn1 = $('#btn1');
-    // btn1.on('click', function(){
-    //    var text=$('#text0')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text1', JSON.stringify(saveText));
-    // })
-
-    // var btn2 = $('#btn2');
-    // btn2.on('click', function(){
-    //    var text=$('#text2')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text2', JSON.stringify(saveText));
-    // })
-
-    // var btn3 = $('#btn3');
-    // btn3.on('click', function(){
-    //    var text=$('#text0')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text3', JSON.stringify(saveText));
-    // })
-
-    // var btn4 = $('#btn4');
-    // btn4.on('click', function(){
-    //    var text=$('#text4')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text4', JSON.stringify(saveText));
-    // })
-
-    // var btn5 = $('#btn5');
-    // btn5.on('click', function(){
-    //    var text=$('#text5')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text5', JSON.stringify(saveText));
-    // })
-
-    
-    // var btn6 = $('#btn6');
-    // btn6.on('click', function(){
-    //    var text=$('#text6')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text6', JSON.stringify(saveText));
-    // })
-
-    // var btn7 = $('#btn7');
-    //    btn7.on('click', function(){
-    //    var text=$('#text7')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text7', JSON.stringify(saveText));
-    // })
-
-    // var btn8 = $('#btn8');
-    //    btn8.on('click', function(){
-    //    var text=$('#text8')
-    //    var saveText = text[0].value;
-    //    localStorage.setItem('text8', JSON.stringify(saveText));
-    // })
-
-
-
