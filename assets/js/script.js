@@ -14,6 +14,9 @@ for (var i = 0; i < 9; i++) {
     textBox.attr('id', `text${i}`)
     textBox.text(JSON.parse(localStorage.getItem(`text${i}`)));
     textBox.addClass(`col col-md-10 description text${i}`);
+     if(moment() > moment().format('HH'));{
+         location.reload();
+    }
     if (counter < Number(moment().format('HH'))) {
         textBox.addClass('bg-secondary');
     } else if (counter > Number(moment().format('HH'))) {
